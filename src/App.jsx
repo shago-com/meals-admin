@@ -53,7 +53,8 @@ import CouponHomePage from './templates/coupons/Home';
 
 
 const { localStorage } = window;
-const apiUrl = `http://localhost/api/admin`;
+const apiUrl = process.env.API_URL;
+// const apiUrl = `http://localhost/api/admin`;
 // const apiUrl = `http://192.168.43.21:80/api/dashboard`;
 
 class ErrorBoundary extends React.Component {
