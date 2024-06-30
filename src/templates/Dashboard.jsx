@@ -237,23 +237,26 @@ const DashboardPage = ({ ...props }) => {
 				<Grid item xs={12} sx={{my: 2}} md={6}>
 					<Box className="card" fullWidth py={2} px={2} borderRadius={'10px !important'}>
 						<Typography mb={3} fontWeight={'600'}> Weekly Sales Chart</Typography>
-						<Chart
-							series={[
-								{
-									name: 'Weekly Sales',
-									data: [22, 10, 20, 30, 50, 60, 70],
-								}
-							]}
-							options={{
-								chart: {id: 'performance'},
-								xaxis: {
-									categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-									
-								},
-							}}
-							type="line"
-							width={'100%'}
+						{/*
+							<Chart
+								series={[
+									{
+										name: 'Weekly Sales',
+										data: [22, 10, 20, 30, 50, 60, 70],
+									}
+								]}
+								options={{
+									chart: {id: 'performance'},
+									xaxis: {
+										categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+										
+									},
+								}}
+								type="line"
+								width={'100%'}
 							/>
+
+						*/}
 					</Box>
 				</Grid>
 			</Grid>
