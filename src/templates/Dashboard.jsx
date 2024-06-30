@@ -225,12 +225,14 @@ const DashboardPage = ({ ...props }) => {
 				<Grid item xs={12} sx={{my: 2}} md={6}>
 					<Box className="card" fullWidth py={2} px={2} borderRadius={'10px !important'}>
 						<Typography mb={3} fontWeight={'600'}> Weekly Sales Chart</Typography>
-						<Chart
-							series={chartData}
-							options={chartOptions}
-							type="bar"
-							width={'100%'}
+						{/*
+							<Chart
+								series={chartData}
+								options={chartOptions}
+								type="bar"
+								width={'100%'}
 							/>
+						*/}
 					</Box>
 				</Grid>
 
