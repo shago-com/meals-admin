@@ -164,7 +164,7 @@ const DashboardPage = ({ ...props }) => {
 	useEffect(() => {
 		function init(){
 			getData();
-			makeCharts();
+			// makeCharts();
 		}
 		init();
 
