@@ -343,13 +343,13 @@ const DashboardPage = ({ ...props }) => {
 														</Link>
 													</TableCell>
 
-													<TableCell scope="row"> <Typography> {order?.customer} </Typography> </TableCell>
+													<TableCell scope="row"> <Typography> {order?.customer?.user?.first_name} {order?.customer?.user?.last_name} </Typography> </TableCell>
 													<TableCell scope="row"> <Typography> {order?.created_on} ago </Typography> </TableCell>
 													<TableCell scope="row">
 														<Chip
 															sx={{mr: 1.5}}
-															color={order?.paid? "success" : "error"}
-															label={order?.paid ? "Paid" : "Not Paid"}
+															color={order?.payment_status? "success" : "error"}
+															label={order?.payment_status? "Paid" : "Not Paid"}
 														/>
 													</TableCell>
 													<TableCell scope="row">
