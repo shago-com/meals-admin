@@ -346,6 +346,7 @@ export function Sidebar({ toggleNav, closeNav, brand, ...props }){
 	}
 
 	return(
+		<ClickAwayListener onClickAway={navIsOpen && closeNav}>
 		<Box ref={props.sidebarRef} className="sidebar no-print">
 			<Stack ref={props.sidebarHeaderRef} className="sidebar-header" sx={{
 				backgroundColor: 'papayawhip',
@@ -435,6 +436,7 @@ export function Sidebar({ toggleNav, closeNav, brand, ...props }){
 				</IconButton>
 			}
 		</Box>
+		</ClickAwayListener>
 	)
 }
 
